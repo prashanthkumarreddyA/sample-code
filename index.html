@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplotel</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="nav-container">
+      <div class="nav-sub-container">
+        <div class="nav-links-container">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/order" class="nav-link">Order</a>
+          <a href="/food" class="nav-link">Food</a>
+          <a href="/restaurant" class="nav-link">Restaurant</a>
+          <a href="/testimonials" class="nav-link">Testimonials</a>
+          <a href="/contact-us" class="nav-link">Contact Us</a>
+        </div>
+        <img class="menu" src="./assets/menu-bar.png" alt="Menu Bar" />
+      </div>
+    </header>
+
+    <main>
+      <section class="main-container">
+        <div class="left-container">
+          <div class="left-content">
+            <h1 class="main-heading">Lorem Ipsum</h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+              euismod lorem in, sollicitudin viverra eros. Donec dictum luctus
+              quam ut tristique. Curabitur nec faucibus purus. Quisque congue
+              sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar,
+              massa ac porta viverra.
+            </p>
+            <button class="click-button">Click Me</button>
+          </div>
+        </div>
+        <div class="right-container">
+          <img
+            src="./assets/pexels-robin-stickel-70497.jpg"
+            alt="Burger"
+            class="burger-image"
+          />
+        </div>
+      </section>
+
+      <section class="second-page-container">
+        <div class="second-page-sub-container">
+          <div>
+            <img
+              src="./assets/pexels-rachel-claire-6752433.jpg"
+              alt="The Stage"
+              class="second-page-image-1"
+            />
+            <img
+              src="./assets/pexels-eva-bronzini-6141651.jpg"
+              alt="Street"
+              class="second-page-image-1"
+            />
+          </div>
+          <img
+            src="./assets/pexels-mister-mister-3434523.jpg"
+            alt="Food platter"
+            class="second-page-image-2"
+          />
+        </div>
+        <div class="second-page-right-container">
+          <p class="second-page-description">Lorem Ipsum</p>
+          <h1 class="second-page-heading">LOREM IPSUM SET ADEMIR</h1>
+          <div style="display: flex; align-items: center; gap: 10px">
+            <p>Click</p>
+            <img src="./assets/icons8-arrow-30.png" alt="Arrow" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      document.querySelector(".menu").addEventListener("click", function () {
+        document
+          .querySelector(".nav-links-container")
+          .classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

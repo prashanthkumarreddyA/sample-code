@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  /* background: linear-gradient(
+      90deg,
+      rgba(255, 246, 177, 1) 0%,
+      rgba(255, 211, 212, 1) 100%
+    ); */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  background-color: #ff7273;
+  width: 100%;
+}
+.nav-sub-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 20px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+.menu {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.main-container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.left-container {
+  background: linear-gradient(
+    to right,
+
+    rgba(255, 246, 177, 1) 0%,
+    rgba(255, 211, 212, 1) 100%
+  );
+  width: 45%;
+  height: calc(100vh - 64px);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 5rem;
+  padding: auto;
+  width: 80%;
+}
+.right-container {
+  width: 45%;
+  flex: 1;
+}
+.burger-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-heading {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Roboto";
+  color: #191919;
+}
+.description {
+  font-size: 18px;
+  font-family: "Roboto";
+  line-height: 24px;
+  color: #191919;
+  font-weight: 100;
+}
+
+.click-button {
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background-color: #ff7273;
+  width: 210px;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 12px;
+}
+
+.second-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+  gap: 16px;
+
+  background: linear-gradient(
+    to right,
+
+    rgba(255, 246, 177, 1) 10%,
+    rgba(255, 211, 212, 1) 50%
+  );
+  margin-top: 10px;
+  padding: 40px;
+}
+.second-page-sub-container {
+  display: flex;
+  gap: 30px;
+}
+
+.second-page-container > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.second-page-image-1 {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.second-page-image-2 {
+  height: 412px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.second-page-right-container {
+  width: 40%;
+  background-color: #ff7273;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: max-content;
+}
+.second-page-description {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Roboto";
+}
+.second-page-heading {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Roboto";
+  color: #191919;
+}
+@media (max-width: 912px) {
+  .second-page-right-container {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column-reverse;
+    height: max-content;
+  }
+  .left-container {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0px;
+  }
+  .right-container {
+    width: 100%;
+    height: 100%;
+  }
+  .second-page-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+  }
+  .second-page-sub-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .second-page-right-container {
+    width: 80%;
+  }
+
+  .nav-links-container {
+    visibility: hidden;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background-color: #ff7273;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-links-container.active {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 512px) {
+  .second-page-image-1 {
+    width: 100%;
+    min-width: 150px;
+  }
+  .second-page-image-2 {
+    width: 50%;
+  }
+  .second-page-container > div:first-child > div {
+    width: 100%;
+  }
+  .second-page-right-container {
+    width: 95%;
+  }
+  .second-page-heading,
+  .main-heading {
+    font-size: 32px;
+  }
+}
